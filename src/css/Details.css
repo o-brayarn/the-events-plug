@@ -1,0 +1,200 @@
+.Details {
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    line-height: 2em;
+}
+
+.details-header {
+    margin-top: 2em;
+    line-height: 2.5em;
+}
+
+.details-header h1 {
+    font-size: 2.5rem;
+}
+
+.content {
+    display: flex;
+    margin-top: .5em;
+}
+
+.content>div {
+    width: 20%;
+}
+
+.content>div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.map-image {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    margin-top: 1.5em;
+}
+
+.map-image img {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* google maps */
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.mapouter {
+    text-align: right;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+}
+
+
+.details-description {
+    margin-top: 1em;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-description h1 {
+    margin-bottom: .5em;
+}
+
+.like {
+    position: relative;
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.like .tooltiptext {
+    visibility: hidden;
+    width: 90px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.like:hover .tooltiptext {
+    visibility: visible;
+}
+
+.like span {
+    font-size: .5em;
+}
+
+.like:hover {
+    cursor: pointer;
+}
+
+/* when and where */
+.tickets {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.date-location span {
+    font-weight: bold;
+}
+
+.tiko p span {
+    font-weight: 700;
+}
+
+.tiko p {
+    margin-bottom: 1em;
+}
+
+.tiko button {
+    background-color: #1406FA;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.delete {
+    margin-top: 2em;
+    width: 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.delete-btn {
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 858px) {
+    .map-image {
+        grid-template-columns: auto;
+    }
+    .map-image img {
+        width: 100%;
+        height: 200px;
+    }
+    /* google maps */
+    
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .tickets {
+        grid-template-columns: auto;
+    }
+
+    .delete {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+
+    .delete-btn {
+        width: 100%;
+    }
+
+    .edit-btn {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
